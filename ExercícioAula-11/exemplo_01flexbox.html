@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html, body{
+            height: 100%;
+        }
+        .linha{
+            display: flex;
+            align-items: stretch;
+            height: 50%;
+        }
+        #a{
+            background-color: lightblue;
+        }
+        #b{
+            background-color: lightcoral;
+        }
+        #c{
+            background-color: lightgray;
+        }
+        #a, #c{
+            flex-grow: 1;
+        }
+        #b{
+            flex-grow: 2;
+        }
+        #a, #b, #c{
+            flex-basis: 0;
+        }
+        .bloco1{
+            background-color: darkorange;
+            flex-grow: 1;
+            flex-basis: 0
+        }
+        .bloco2{
+            background-color: darkmagenta;
+            flex-grow: 2;
+            flex-basis: 0;
+        }
+
+    </style>
+</head>
+<body>
+    <section class="linha"><!--agrupamento é por linha-->
+        <article id="a">A</article>
+        <article id="b">B</article>
+        <article id="c">C</article>
+    </section>
+    <section class="linha">
+        <article class="bloco1">1</article>
+        <article class="bloco2">2</article>
+    </section>
+</body>
+</html>

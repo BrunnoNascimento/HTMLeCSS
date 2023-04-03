@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eXEMPLO 01 - FlexBox</title>
+    <style>
+        .central{
+            border: 1px solid green;
+            padding: 12px;
+        }
+        .area1{
+            border: 1px solid magenta;
+            padding: 12px;
+        }
+        .area2{
+            border: 1px solid chocolate;
+            padding: 12px;
+        }
+        header, section, footer{
+            border: 1px solid blue;
+            padding:12px;
+        }
+        /*configura o conteúdo*/
+        #flex{
+            display: flex;
+            /*organiza os elementos na linha e sem quebra de linha*/
+            flex-flow: row nowrap;
+            align-items: stretch;
+        }
+        nav, aside, #flex{
+            padding: 0;
+        }
+        nav, aside{
+            width: 200px;
+        }
+        /*ocupa o restante de espaço*/
+        article{
+           width: 400px;
+           height: 400px;
+           flex-grow: 1;
+        }
+        nav{
+            display: flex;
+            /*organiza os elementos em coluna, sem quebra de linha*/
+            flex-flow: column nowrap;
+        }
+        aside{
+            display: flex;
+            flex-flow: column nowrap;
+            width: 100px;
+            align-items: stretch;
+        }
+        .caixa{
+            display: flex;
+            align-items: center;
+            flex-flow: column nowrap;
+            margin: 5px;
+            flex-grow: 1;
+        }
+        .caixa:hover{
+            flex-grow: 4;
+            background-color: black;
+            color: white;
+            transition: 0.5s;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <section><!--Agrupa todo o conteúdo-->
+        <header>Aqui vai um título</header>
+        <div class="central" id="flex"><!--Agrupa o conteúedo central-->
+            <nav class="area1">
+                <div class="area1 caixa">Link 1</div>
+                <div class="area1 caixa">Link 2</div>
+                <div class="area1 caixa">Link 3</div>
+                <div class="area1 caixa">Link 4</div>
+            </nav>
+            <article class="area2">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt ut facilis obcaecati architecto quisquam magnam molestiae ratione veniam iste quod vel, officia necessitatibus iusto id sit sed ipsa, doloribus quia.
+            </article>
+            <aside class="area1">
+                <div class="area1">Texto 1</div>
+                <div class="area1">Texto 2</div>
+                <div class="area1">Texto 3</div>
+            </aside>
+        </div>
+        <footer>&copy Rodapé - 2022</footer>
+    </section>
+</body>
+</html>

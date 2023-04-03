@@ -1,0 +1,73 @@
+/* comentário */
+label{
+    font-family: Tahoma;
+    font-size: 14pt;
+}
+p{
+    color: darkblue;
+}
+article.borda{
+    border: solid 2px blue;
+    /*padding: 15px 30px 15px 30px;*/
+    padding: 40px; /*aplica nas 4 bordas*/
+    margin: 50px;
+}
+/*classe generica*/
+.caixa{
+    text-transform: uppercase;
+    font-size: 18pt;
+    background-color: lightblue;
+    border-radius: 10px;
+}
+/*arredondamento da borda*/
+.diferente{
+    /*border-radius: 10px 15px 20px 25px;*/
+    border-radius: 50px;
+    border: solid 3px lightblue;
+    width: 50%;
+    height: 30%;
+}
+/*agrupamento de seletor*/
+header{
+    padding: 30px;
+    background-color: lightskyblue;
+    border-radius: 10px;
+}
+/*seletor universal*/
+/*aplicar a formatação para todo o conteudo*/
+*{
+    font-family: verdana;
+    font-size: 14pt;
+}
+body{
+    padding: 30px;
+    background-color:lightcyan;
+    margin: 0 auto;
+    text-align:center;
+    width: 960px;
+}
+ul{
+    width: 960px;
+    list-style: none;
+    text-transform: uppercase;
+    margin: 0 10px;
+    text-align: left;
+}
+
+li{
+    display: inline-block;
+    margin: 0 10px;
+}
+
+
+figure{
+    text-align:inherit;
+    margin: 0 auto;
+    width: 960px;
+}
+nav{
+    border-radius: 30px;
+    background-color: lightblue;
+}
+
+

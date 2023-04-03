@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .linha{
+            display: flex;
+            height: 550px;
+            background-color: #ccc;
+            padding: 0;
+            margin: 0;
+            /*alinhamento na horizontal*/
+            /*organizados em linha, com quebra de linha*/
+            flex-flow: row wrap;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .lista1{
+            display: flex;
+            list-style: none;
+            background-color: lightgreen;
+            /*em coluna, com quebra de linha*/
+            flex-flow: column wrap;
+            justify-content: space-around;
+            padding: 0;
+            margin: 0;
+        }
+        .lista2{
+            display: flex;
+            list-style: none;
+            background-color: lightpink;
+            flex-flow: row wrap;
+            padding: 0;
+            margin: 0;
+            justify-content: space-around;
+        }
+        li{
+            background-color: orange;
+            font-size: 40pt;
+            font-family: Verdana;
+            text-align: center;
+            width: 100px;
+            height: 100px;
+            line-height: 100px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <section class="linha">
+        <ul class="lista1">
+            <li>A</li>
+            <li>B</li>
+            <li>C</li>
+            <li>D</li>
+        </ul>
+        <ul class="lista2">
+            <li>E</li>
+            <li>F</li>
+            <li>G</li>
+        </ul>
+    </section>
+</body>
+</html>

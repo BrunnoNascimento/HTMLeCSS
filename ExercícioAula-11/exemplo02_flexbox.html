@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        article{
+            width: 50px;
+            height: 50px;
+            background-color: aqua;
+            margin: 5px;
+        }
+        .linha{
+            display: flex;
+            background-color: #ccc;
+            padding: 10px;
+        }
+        #c1{
+            justify-content: flex-start;
+        }
+        #c2{
+            justify-content: flex-end;
+        }
+        #c3{
+            justify-content: center;
+        }
+        #c4{
+            justify-content: space-between;
+        }
+        #c5{
+            justify-content: space-around;
+        }
+    </style>
+</head>
+<body>
+    <h1>Justify</h1>
+    <h2>flex-start</h2>
+    <section class="linha" id="c1">
+        <article></article>
+        <article></article>
+        <article></article>
+    </section>
+    <h2>flex-end</h2>
+    <section class="linha" id="c2">
+        <article></article>
+        <article></article>
+        <article></article>
+    </section>
+    <h2>center</h2>
+    <section class="linha" id="c3">
+        <article></article>
+        <article></article>
+        <article></article>
+    </section>
+    <h2>space-between</h2>
+    <section class="linha" id="c4">
+        <article></article>
+        <article></article>
+        <article></article>
+    </section>
+    <h2>space-around</h2>
+    <section class="linha" id="c5">
+        <article></article>
+        <article></article>
+        <article></article>
+    </section>
+</body>
+</html>

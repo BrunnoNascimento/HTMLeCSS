@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        .c1, .c2, .c3{
+            height: 300px;
+        }
+        .c1{
+            background-color: green;
+        }
+        .c2{
+            background-color: lime;
+        }
+        .c3{
+            background-color: chocolate;
+        }
+        /*layout responsivo*/
+        @media screen and (min-width: 1024px) {
+            .c1, .c2, .c3{
+                float: left;
+            }
+            .c1{
+                width: 30%;
+            }
+            .c2{
+                width: 60%;
+            }
+            .c3{
+                width: 10%;
+            }
+        }
+        @media screen and (max-width: 780px) {
+            .c1, .c2{
+                float: left;
+                width: 50%;
+            }
+            .c3{
+                 clear: both;
+                 background-color: magenta;
+            }
+        }
+    </style>
+</head>
+<body>
+    <article class="c1"></article>
+    <article class="c2"></article>
+    <article class="c3"></article>
+</body>
+</html>

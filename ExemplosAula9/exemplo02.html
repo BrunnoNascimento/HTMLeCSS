@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exemplo 02</title>
+    <meta charset="UTF-8">
+    <style>
+        article{
+            height: 100px;
+            width: 300px;
+            padding: 50px;
+            border: 10px solid red;
+        }
+        .caixa1{
+            box-sizing: border-box;
+        }
+        .caixa2{
+            box-sizing: border-box;
+            overflow: auto;
+        }
+        #texto1{
+            border: none;
+            width: auto;
+            text-align: justify;
+        }
+        #coluna1{
+            columns: 100px 3; /*largura e quantidade de colunas*/
+        }
+        #coluna2{
+            column-count: 4;
+        }
+        .gap{
+            column-gap: 40px;
+        }
+        .linha{
+            column-rule: 4px inset red;
+        }
+        .h1{
+            text-align: center;
+        }
+    </style>
+    
+</head>
+<body>
+    <section>
+        <h2 class="h1">Caixa sem o box-sizing</h2>
+        <article>
+            Caixa 1<br>
+            largura = 300px <br>
+            altura = 100px <br>
+            margem interna = 50px; <br>
+            borda = 10px
+        </article>
+        
+        <h2>Caixa com o box-sizing</h2>
+        <article class="caixa1">
+            Caixa 2<br>
+            largura = 300px <br>
+            altura = 100px <br>
+            margem interna = 50px; <br>
+            borda = 10px<br>
+            box-sizing: border-box;
+        </article>
+        
+        <h2>Caixa com o box-sizing e overflow</h2>
+        <article class="caixa2">
+            Caixa 3<br>
+            largura = 300px <br>
+            altura = 100px <br>
+            margem interna = 50px; <br>
+            borda = 10px<br>
+            box-sizing: border-box;
+        </article>
+    </section>
+    <section>
+        <h1 class="h1">Texto em Colunas</h1>
+        <article id="texto1">
+            <p id="coluna1" class="gap">
+                O vídeo fornece uma maneira poderosa de ajudá-lo a provar seu argumento. Ao clicar em Vídeo Online, você pode colar o código de inserção do vídeo que deseja adicionar.
+                Você também pode digitar uma palavra-chave para pesquisar online o vídeo mais adequado ao seu documento. Para dar ao documento uma aparência profissional, o Word fornece designs de cabeçalho, rodapé, folha de rosto e caixa de texto que se complementam entre si.
+                Por exemplo, você pode adicionar uma folha de rosto, um cabeçalho e uma barra lateral correspondentes. Clique em Inserir e escolha os elementos desejados nas diferentes galerias.
+                Temas e estilos também ajudam a manter seu documento coordenado. Quando você clica em Design e escolhe um novo tema, as imagens, gráficos e elementos gráficos SmartArt são alterados para corresponder ao novo tema.
+                Quando você aplica estilos, os títulos são alterados para coincidir com o novo tema. Economize tempo no Word com novos botões que são mostrados no local em que você precisa deles.
+            </p>
+            <p id="coluna2" class="linha gap">
+                O vídeo fornece uma maneira poderosa de ajudá-lo a provar seu argumento. Ao clicar em Vídeo Online, você pode colar o código de inserção do vídeo que deseja adicionar.
+                Você também pode digitar uma palavra-chave para pesquisar online o vídeo mais adequado ao seu documento. Para dar ao documento uma aparência profissional, o Word fornece designs de cabeçalho, rodapé, folha de rosto e caixa de texto que se complementam entre si.
+                Por exemplo, você pode adicionar uma folha de rosto, um cabeçalho e uma barra lateral correspondentes. Clique em Inserir e escolha os elementos desejados nas diferentes galerias.
+                Temas e estilos também ajudam a manter seu documento coordenado. Quando você clica em Design e escolhe um novo tema, as imagens, gráficos e elementos gráficos SmartArt são alterados para corresponder ao novo tema.
+                Quando você aplica estilos, os títulos são alterados para coincidir com o novo tema. Economize tempo no Word com novos botões que são mostrados no local em que você precisa deles.
+            </p>
+        </article>
+    </section>
+</body>
+</html>

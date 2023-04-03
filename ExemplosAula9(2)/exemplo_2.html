@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Untitled Document</title>
+    <style>
+        div {
+            position: absolute;
+            border: 1px solid ;
+        }
+        
+        div.um {
+            width: 200px;
+            height: 80px;
+            background-color: aqua;
+            z-index: 5; /*Quanto maior o valor do z-index ,ais a frente o elemento está à frente dos outros*/
+        }
+        
+        div.dois {
+            width: 100px;
+            height: 150px;
+            background-color: lightgreen;
+            left: 120px;
+            top: 20px;
+        }
+        
+        div.tres {
+            width: 80px;
+            height: 300px;
+            background-color: lightskyblue;
+            left: 70px;
+            top: 50px;
+        }
+        div:hover{ /*pseudo classe hover*/
+            z-index: 10;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="um"> Primeira DIV</div>
+    <div class="dois"> Segunda DIV</div>
+    <div class="tres"> Terceira DIV</div>
+</body>
+
+</html>
